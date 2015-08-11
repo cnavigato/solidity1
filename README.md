@@ -12,46 +12,46 @@ For me this is about growing as a programmer while sharing some little program-c
 
 **Authenticity**
 
-To check that the roulette.sol contract is actually the one on the ethereum blockchain, compile it with optimizations enabled, at https://chriseth.github.io/browser-solidity/ and compare the resulting Bytecode with the output of web3.eth.getCode('0x5fe5b7546d1628f7348b023a0393de1fc825a4fd');
+To check that the roulette.sol contract is actually the one on the ethereum blockchain, compile it with optimizations enabled, at https://chriseth.github.io/browser-solidity/ and compare the resulting Bytecode with the output of `web3.eth.getCode('0x5fe5b7546d1628f7348b023a0393de1fc825a4fd');`
         
 **Init Contract**
 
 In geth console type: 
 
-var rouletteContract = web3.eth.contract([{"constant":true,"inputs":[],"name":"casinoBalance","outputs":[{"name":"","type":"uint256"}],"type":"function"},{"constant":false,"inputs":[],"name":"kill","outputs":[],"type":"function"},{"constant":false,"inputs":[{"name":"amount","type":"uint256"}],"name":"casinoWithdraw","outputs":[],"type":"function"},{"constant":false,"inputs":[{"name":"number","type":"uint256"}],"name":"betOnNumber","outputs":[{"name":"","type":"string"}],"type":"function"},{"constant":false,"inputs":[],"name":"casinoDeposit","outputs":[],"type":"function"},{"constant":false,"inputs":[{"name":"color","type":"uint256"}],"name":"betOnColor","outputs":[{"name":"","type":"string"}],"type":"function"},{"constant":true,"inputs":[],"name":"welcome","outputs":[{"name":"","type":"string"}],"type":"function"},{"inputs":[],"type":"constructor"}]);
-var roulette = rouletteContract.at('0x5fe5b7546d1628f7348b023a0393de1fc825a4fd');
+    var rouletteContract = web3.eth.contract([{"constant":true,"inputs":[],"name":"casinoBalance","outputs":[{"name":"","type":"uint256"}],"type":"function"},{"constant":false,"inputs":[],"name":"kill","outputs":[],"type":"function"},{"constant":false,"inputs":[{"name":"amount","type":"uint256"}],"name":"casinoWithdraw","outputs":[],"type":"function"},{"constant":false,"inputs":[{"name":"number","type":"uint256"}],"name":"betOnNumber","outputs":[{"name":"","type":"string"}],"type":"function"},{"constant":false,"inputs":[],"name":"casinoDeposit","outputs":[],"type":"function"},{"constant":false,"inputs":[{"name":"color","type":"uint256"}],"name":"betOnColor","outputs":[{"name":"","type":"string"}],"type":"function"},{"constant":true,"inputs":[],"name":"welcome","outputs":[{"name":"","type":"string"}],"type":"function"},{"inputs":[],"type":"constructor"}]);
+    var roulette = rouletteContract.at('0x5fe5b7546d1628f7348b023a0393de1fc825a4fd');
 
-roulette.welcome.call();
+    roulette.welcome.call();
 
-web3.fromWei(roulette.casinoBalance.call(), "ether");
+    web3.fromWei(roulette.casinoBalance.call(), "ether");
 
 **Bet on Number**
 
 In geth console type:
 
-var number = 17; // Number to bet on
+    var number = 17; // Number to bet on
 
-var amount = 5; // Value has to be between 1 ETH and 10 ETH
+    var amount = 5; // Value has to be between 1 ETH and 10 ETH
 
-roulette.betOnNumber.sendTransaction(number,{from:eth.accounts[0], value: web3.toWei(amount, 'ether'), gas: 400000});
-web3.fromWei(roulette.casinoBalance.call(), "ether");
-web3.fromWei(eth.getBalance(eth.accounts[0]), "ether");
+    roulette.betOnNumber.sendTransaction(number,{from:eth.accounts[0], value: web3.toWei(amount, 'ether'), gas: 400000});
+    web3.fromWei(roulette.casinoBalance.call(), "ether");
+    web3.fromWei(eth.getBalance(eth.accounts[0]), "ether");
 
-assuming eth.accounts[0] is the desired account, otherwise change it.
+assuming `eth.accounts[0]` is the desired account, otherwise change it.
 
 **Bet on Color** 
 
 In geth console type:
 
-var color = 0; // '0' = red, '1' = black
+    var color = 0; // '0' = red, '1' = black
 
-var amount = 5; // Value has to be between 1 ETH and 10 ETH
+    var amount = 5; // Value has to be between 1 ETH and 10 ETH
 
-roulette.betOnColor.sendTransaction(color,{from:eth.accounts[0], value: web3.toWei(amount, 'ether'), gas: 400000});
-web3.fromWei(roulette.casinoBalance.call(), "ether");
-web3.fromWei(eth.getBalance(eth.accounts[0]), "ether");
+    roulette.betOnColor.sendTransaction(color,{from:eth.accounts[0], value: web3.toWei(amount, 'ether'), gas: 400000});
+    web3.fromWei(roulette.casinoBalance.call(), "ether");
+    web3.fromWei(eth.getBalance(eth.accounts[0]), "ether");
 
-assuming eth.accounts[0] is the desired account, otherwise change it.
+assuming `eth.accounts[0]` is the desired account, otherwise change it.
 
 **Disclaimer**
 
