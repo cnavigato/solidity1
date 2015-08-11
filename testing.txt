@@ -1,0 +1,48 @@
+---------------------------------------------------------------
+TESTING
+---------------------------------------------------------------
+roulette.betOnNumber.call(-1,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(0,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(1,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(2,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(3,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(4,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(5,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(6,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(7,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(8,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(9,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(0,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(10,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(11,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(12,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(13,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(14,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(15,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(16,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(17,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(18,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(19,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(20,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(21,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(22,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(23,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(24,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(25,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(26,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(27,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(28,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(29,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(30,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(31,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(32,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(33,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(34,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(35,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(36,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+roulette.betOnNumber.call(37,{from:eth.accounts[2], value:web3.toWei(10, 'ether'), gas: 400000});
+
+roulette.betOnColor.call(-1,{from:eth.accounts[2], value:web3.toWei(10, "ether"), gas: 400000});
+roulette.betOnColor.call(0,{from:eth.accounts[2], value:web3.toWei(10, "ether"), gas: 400000});
+roulette.betOnColor.call(1,{from:eth.accounts[2], value:web3.toWei(10, "ether"), gas: 400000});
+roulette.betOnColor.call(2,{from:eth.accounts[2], value:web3.toWei(10, "ether"), gas: 400000});
