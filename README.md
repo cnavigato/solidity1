@@ -22,9 +22,9 @@ web3.fromWei(roulette.casinoBalance.call(), "ether");
 
 In geth console type:
 
-var number = 17;
+var number = 17; // Number to bet on
 
-var amount = 10; // In ETH
+var amount = 10; // Value has to be between 1 ETH and 10 ETH
 
 roulette.betOnNumber.sendTransaction(number,{from:eth.accounts[0], value: web3.toWei(amount, 'ether'), gas: 400000});
 web3.fromWei(roulette.casinoBalance.call(), "ether");
@@ -38,7 +38,7 @@ In geth console type:
 
 var color = 0; // '0' = red, '1' = black
 
-var amount = 10; // In ETH
+var amount = 10; // Value has to be between 1 ETH and 10 ETH
 
 roulette.betOnColor.sendTransaction(color,{from:eth.accounts[0], value: web3.toWei(amount, 'ether'), gas: 400000});
 web3.fromWei(roulette.casinoBalance.call(), "ether");
