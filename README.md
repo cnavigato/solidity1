@@ -5,7 +5,7 @@ Introducing the first ever roulette program doing provably what it supposed to d
 
 **Authenticity**
 
-To check that the highstakespyramid.sol contract is actually the one on the ethereum blockchain, compile it with optimizations enabled, at https://chriseth.github.io/browser-solidity/ and compare the resulting Bytecode with the output of web3.eth.getCode('0x5fe5b7546d1628f7348b023a0393de1fc825a4fd');
+To check that the roulette.sol contract is actually the one on the ethereum blockchain, compile it with optimizations enabled, at https://chriseth.github.io/browser-solidity/ and compare the resulting Bytecode with the output of web3.eth.getCode('0x5fe5b7546d1628f7348b023a0393de1fc825a4fd');
         
 **Init Contract**
 
