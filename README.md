@@ -2,6 +2,13 @@
 
 Introducing the first ever roulette program doing provably what it supposed to do.
 
+**Personal Note**
+
+I understand that neither this nor the previous pyramid scheme adheres to some high moral compass.
+
+I'm very much a believer of this project and what it stands for and have been ever since I first heard of it.
+
+For me this is about growing as a programmer while sharing some little program-contracts, I myself would've liked to have, with the community.
 
 **Authenticity**
 
@@ -24,7 +31,7 @@ In geth console type:
 
 var number = 17; // Number to bet on
 
-var amount = 10; // Value has to be between 1 ETH and 10 ETH
+var amount = 5; // Value has to be between 1 ETH and 10 ETH
 
 roulette.betOnNumber.sendTransaction(number,{from:eth.accounts[0], value: web3.toWei(amount, 'ether'), gas: 400000});
 web3.fromWei(roulette.casinoBalance.call(), "ether");
@@ -38,21 +45,13 @@ In geth console type:
 
 var color = 0; // '0' = red, '1' = black
 
-var amount = 10; // Value has to be between 1 ETH and 10 ETH
+var amount = 5; // Value has to be between 1 ETH and 10 ETH
 
 roulette.betOnColor.sendTransaction(color,{from:eth.accounts[0], value: web3.toWei(amount, 'ether'), gas: 400000});
 web3.fromWei(roulette.casinoBalance.call(), "ether");
 web3.fromWei(eth.getBalance(eth.accounts[0]), "ether");
 
 assuming eth.accounts[0] is the desired account, otherwise change it.
-
-**Personal Note**
-
-I understand that neither this nor the previous pyramid scheme adheres to some high moral compass.
-
-I'm very much a believer of this project and what it stands for and have been ever since I first heard of it.
-
-For me this is about growing as a programmer while sharing some little program-contracts, I myself would've liked to have, with the community.
 
 **Disclaimer**
 
