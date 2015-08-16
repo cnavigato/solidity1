@@ -6,6 +6,8 @@
 
 - Lower transaction cost due to depositing Ether to the contract by approx. two order of magnitude.
 
+- Bet on Dozen introduced
+
 **Authenticity**
 
 To check that the roulette.sol contract is actually the one on the ethereum blockchain, compile it with optimizations enabled, at https://chriseth.github.io/browser-solidity/ and compare the resulting Bytecode with the output of `web3.eth.getCode('0x580e45f982a0a01cfab3b36b3ec8df63fcc5d290');`
